@@ -151,6 +151,8 @@ p {
     0px 2px 1px var(--shadow-one);
   border: none;
   cursor: pointer;
+  width: 169px;
+  height: 56px;
 }
 
 .subscribe-button {
