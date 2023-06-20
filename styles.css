@@ -455,10 +455,13 @@ span.footer-box-three-text {
     0px 1px 3px var(--modal-shadow-two), 0px 2px 1px var(--modal-shadow-three);
   border-radius: 4px;
   padding: 72px 24px 24px;
+  align-items: center;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.2);
 }
 
 .modal-p {
-  align-items: center;
   font-weight: 500;
   margin-bottom: 16px;
   color: var(--dark);
@@ -466,10 +469,6 @@ span.footer-box-three-text {
 
 .modal-form-box {
   margin-bottom: 8px;
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.2);
 }
 
 .modal-icon {
@@ -484,9 +483,17 @@ span.footer-box-three-text {
 }
 
 .modal-form-field {
-  margin-bottom: 24px;
+  margin-bottom: 4px;
   text-align: start;
   width: 100%;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--subtle-text);
+  display: block;
+}
+.modal-form-input-wrapper {
+  position: relative;
 }
 
 .modal-form-input-desc {
@@ -509,10 +516,6 @@ span.footer-box-three-text {
   border-radius: 4px;
   padding-left: 42px;
   transition: border-color var(--anima);
-}
-
-.modal-form-input-wrapper {
-  position: relative;
 }
 
 .modal-form-message {
