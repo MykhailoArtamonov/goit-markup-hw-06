@@ -167,7 +167,7 @@ p {
     0px 2px 1px var(--shadow-one);
   border: none;
   cursor: pointer;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   padding: 0;
   align-items: center;
@@ -360,10 +360,9 @@ p.footer-box-three-text {
 }
 .form-subscribe {
   display: flex;
-}
-.footer-form-label {
   gap: 24px;
 }
+
 .footer-form-label-input {
   height: 40px;
   width: 264px;
@@ -375,6 +374,9 @@ p.footer-box-three-text {
   background-color: transparent;
   padding: 8px 16px;
   color: var(--secondary-text);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 .footer-form-label input::placeholder {
