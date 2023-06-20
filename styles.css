@@ -543,7 +543,7 @@ span.footer-box-three-text {
 .icon-person {
   width: 18px;
   height: 18px;
-  left: 19px;
+  left: 16px;
 }
 .icon-phone {
   width: 18px;
@@ -573,16 +573,6 @@ span.footer-box-three-text {
   font-size: 12px;
   line-height: 1.2;
   word-spacing: 0.04em;
-}
-
-.modal-form-check-desc {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  line-height: 1.17;
-  word-spacing: 0.04em;
-  color: var(--subtle-text);
-  margin-bottom: 24px;
 }
 
 .modal-form-check-desc a {
