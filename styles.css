@@ -358,14 +358,15 @@ p {
 p.footer-box-three-text {
   margin-bottom: 16px;
 }
-
-.footer-subscribe-wrapper {
+.form-subscribe {
   display: flex;
+}
+.footer-form-label {
   gap: 24px;
 }
-.footer-subscribe-wrapper input {
+.footer-form-label-input {
   height: 40px;
-  min-width: 264px;
+  width: 264px;
   height: 100%;
   outline: none;
   border: 1px solid var(--secondary-text);
@@ -376,7 +377,7 @@ p.footer-box-three-text {
   color: var(--secondary-text);
 }
 
-.footer-subscribe-wrapper input::placeholder {
+.footer-form-label input::placeholder {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
