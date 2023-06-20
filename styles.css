@@ -457,6 +457,17 @@ span.footer-box-three-text {
   padding: 72px 24px 24px;
 }
 
+.modal-p {
+  align-items: center;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: var(--dark);
+}
+
+.modal-form-box {
+  margin-bottom: 8px;
+}
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.2);
 }
@@ -470,11 +481,6 @@ span.footer-box-three-text {
 .modal-form {
   display: flex;
   flex-direction: column;
-}
-
-.modal-p {
-  font-weight: 500;
-  margin-bottom: 16px;
 }
 
 .modal-form-field {
