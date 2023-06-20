@@ -470,7 +470,7 @@ span.footer-box-three-text {
 .modal-form-box {
   margin-bottom: 8px;
 }
-.modal-box-comment {
+.modal-box-checkbox {
   margin-bottom: 16px;
 }
 .modal-icon {
@@ -533,6 +533,20 @@ span.footer-box-three-text {
   left: 16px;
   transition: fill var(--anima);
 }
+
+.modal-check-desc-span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color var(--anima), border var(--anima),
+    fill var(--anima);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
 .modal-form-input:focus {
   outline: none;
   border-color: var(--primary-brand);
@@ -551,7 +565,12 @@ span.footer-box-three-text {
   line-height: 1.2;
   word-spacing: 0.04em;
 }
-
+.modal-form-check-desc {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--subtle-text);
+}
 .modal-form-check-desc a {
   line-height: 1.33;
   text-decoration: underline;
