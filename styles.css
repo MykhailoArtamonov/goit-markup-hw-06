@@ -492,6 +492,7 @@ span.footer-box-three-text {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--subtle-text);
+  display: block;
 }
 .modal-form-input-wrapper {
   position: relative;
