@@ -522,6 +522,7 @@ span.footer-box-three-text {
   resize: none;
   transition: border-color var(--anima);
   display: block;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-form-input-icon {
