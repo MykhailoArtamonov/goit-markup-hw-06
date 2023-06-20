@@ -470,7 +470,9 @@ span.footer-box-three-text {
 .modal-form-box {
   margin-bottom: 8px;
 }
-
+.modal-box-comment {
+  margin-bottom: 16px;
+}
 .modal-icon {
   height: 8px;
   width: 8px;
@@ -490,7 +492,6 @@ span.footer-box-three-text {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--subtle-text);
-  display: block;
 }
 .modal-form-input-wrapper {
   position: relative;
@@ -519,18 +520,21 @@ span.footer-box-three-text {
   letter-spacing: 0.04em;
 }
 
-.modal-form-message {
+.modal-form-comment {
   width: 100%;
   height: 120px;
-  border: 1px solid var(--backdrop-background);
   border-radius: 4px;
   padding-left: 16px;
   padding-top: 8px;
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.04em;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  outline: transparent;
   resize: none;
   transition: border-color var(--anima);
+  display: block;
 }
 
 .modal-form-input-icon {
@@ -538,12 +542,8 @@ span.footer-box-three-text {
   top: 50%;
   transform: translateY(-50%);
   fill: var(--dark);
-  transition: fill var(--anima);
-}
-.icon-person {
-  width: 18px;
-  height: 18px;
   left: 16px;
+  transition: fill var(--anima);
 }
 .icon-phone {
   width: 18px;
@@ -564,7 +564,6 @@ span.footer-box-three-text {
 }
 
 .modal-form-message:focus {
-  outline: none;
   border-color: var(--primary-brand);
 }
 
