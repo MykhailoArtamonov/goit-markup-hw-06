@@ -544,9 +544,7 @@ span.footer-box-three-text {
 .modal-form-input:focus + .modal-form-input-icon {
   fill: var(--primary-brand);
 }
-.modal-form-input {
-  background-color: transparent;
-}
+
 .modal-form-comment::placeholder {
   background-color: var(--secondary-text);
   color: var(--backdrop-background);
