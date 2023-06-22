@@ -542,7 +542,7 @@ span.footer-box-three-text {
   fill: var(--primary-brand);
 }
 .modal-form-input {
-  background-color: var(--secondary-text);
+  background-color: transparent;
 }
 .modal-form-comment::placeholder {
   background-color: var(--secondary-text);
