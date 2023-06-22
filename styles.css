@@ -510,6 +510,9 @@ span.footer-box-three-text {
   transition: border-color var(--anima);
 }
 
+.modal-form-box-comment {
+  margin-bottom: 16px;
+}
 .modal-form-comment {
   width: 100%;
   height: 120px;
