@@ -547,7 +547,6 @@ span.footer-box-three-text {
 }
 
 .modal-form-comment::placeholder {
-  background-color: var(--secondary-text);
   color: var(--backdrop-background);
 }
 .modal-form-check-desc {
@@ -569,7 +568,6 @@ span.footer-box-three-text {
   justify-content: center;
   fill: transparent;
 }
-
 .modal-form-check:checked + .modal-form-check-desc > .modal-check-desc-span {
   background-color: var(--active-buttons);
   border: none;
