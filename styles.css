@@ -471,7 +471,7 @@ span.footer-box-three-text {
   margin-bottom: 8px;
 }
 .modal-box-checkbox {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 .modal-icon {
   height: 8px;
@@ -526,6 +526,9 @@ span.footer-box-three-text {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.modal-form-comment:focus {
+  border-color: var(--primary-brand);
+}
 .modal-form-input-icon {
   position: absolute;
   top: 50%;
