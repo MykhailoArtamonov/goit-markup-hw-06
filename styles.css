@@ -573,6 +573,9 @@ span.footer-box-three-text {
   border: none;
   fill: var(--light);
 }
+.modal-form-privacy-link {
+  color: var(--primary-brand);
+}
 
 /*   features-section   */
 
