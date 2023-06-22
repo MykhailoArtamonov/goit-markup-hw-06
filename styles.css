@@ -560,7 +560,7 @@ span.footer-box-three-text {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
@@ -568,38 +568,13 @@ span.footer-box-three-text {
   justify-content: center;
   fill: transparent;
 }
-.modal-form-check-desc a {
-  line-height: 1.33;
-  text-decoration: underline;
-  color: var(--primary-brand);
+
+.modal-form-check:checked + .modal-form-check-desc > .modal-check-desc-span {
+  background-color: var(--active-buttons);
+  border: none;
+  fill: var(--light);
 }
 
-.modal-form-agreement-box:checked {
-  background-color: var(--hover-focus-color);
-  border: var(--hover-focus-color);
-}
-
-.modal-form-agreement-checked {
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-input[type="checkbox"]:checked
-  + .modal-form-agreement-icon
-  > .modal-form-agreement-checked {
-  opacity: 1;
-}
-
-.modal-form-agreement-unchecked {
-  opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-input[type="checkbox"]:checked
-  + .modal-form-agreement-icon
-  > .modal-form-agreement-unchecked {
-  opacity: 1;
-}
 /*   features-section   */
 
 .features-section {
