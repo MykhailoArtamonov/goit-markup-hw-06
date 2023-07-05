@@ -554,14 +554,7 @@ span.footer-box-three-text {
   padding-top: 112px;
   padding-bottom: 112px;
 }
-@media screen and (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero-section {
-    background-image: linear-gradient(var(--grey), var(--grey)),
-      url("./images/mob-bcg@2x.jpg");
-  }
-}
+
 .hero-h {
   letter-spacing: 0.72px;
   font-size: 36px;
