@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +27,7 @@
           <a href="./index.html" class="logo"
             ><span class="logo-web">Web</span>Studio</a
           >
-          <ul>
+          <ul class="nav-ul">
             <li class="nav-li">
               <a class="nav-a" href="./index.html">Studio</a>
             </li>
@@ -40,8 +39,13 @@
             <li class="nav-li"><a class="nav-a" href="">Contacts</a></li>
           </ul>
         </nav>
+        <button class="menu-open-button js-open-menu" type="button">
+          <svg class="open-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <address class="header-address">
-          <ul>
+          <ul class="address-ul">
             <li class="address-li">
               <a class="address-a" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -54,6 +58,78 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="header-mobile-menu-container js-menu-container">
+        <div class="header-mobile-menu">
+          <button class="menu-button-close js-close-menu" type="button">
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div>
+            <ul class="mobile-menu-nav-ul">
+              <li>
+                <a class="mobile-nav-a" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a
+                  class="mobile-nav-a header-active-page"
+                  href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li><a class="mobile-nav-a" href="">Contacts</a></li>
+            </ul>
+          </div>
+          <div>
+            <address class="header-mobile-address">
+              <ul class="mobile-address-ul">
+                <li class="mobile-address-li">
+                  <a class="mobile-address-a-number" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mobile-address-li">
+                  <a
+                    class="mobile-address-a-info"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="header-mobile-social-items">
+              <li class="header-mobile-social-item">
+                <a class="header-mobile-social-link" href="">
+                  <svg class="header-mobile-social-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-mobile-social-item">
+                <a class="header-mobile-social-link" href="">
+                  <svg class="header-mobile-social-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-mobile-social-item">
+                <a class="header-mobile-social-link" href="">
+                  <svg class="header-mobile-social-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header-mobile-social-item">
+                <a class="header-mobile-social-link" href="">
+                  <svg class="header-mobile-social-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -82,13 +158,19 @@
               <a href="" class="filter-list-link">
                 <div class="filter-list-box">
                   <img
-                    src="./images/img(8).jpg"
+                    srcset="
+                      ./images/mob-filt1.jpg     396w,
+                      ./images/mob-filt1@2x.jpg  397w,
+                      ./images/tab-filt1.jpg     356w,
+                      ./images/tab-filt1@2x.jpg  357w,
+                      ./images/desk-filt1.jpg    360w,
+                      ./images/desk-filt1@2x.jpg 361w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 746px) 356px, 100vw"
+                    src="mob-filt1.jpg"
                     alt="image"
-                    class=""
-                    width="360"
-                    height="300"
+                    class="filter-list-img"
                   />
-
                   <p class="filter-list-p">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -106,13 +188,19 @@
               <a href="" class="filter-list-link">
                 <div class="filter-list-box">
                   <img
-                    src="./images/img(1).jpg"
+                    srcset="
+                      ./images/mob-filt2.jpg     396w,
+                      ./images/mob-filt2@2x.jpg  397w,
+                      ./images/tab-filt2.jpg     356w,
+                      ./images/tab-filt2@2x.jpg  357w,
+                      ./images/desk-filt2.jpg    360w,
+                      ./images/desk-filt2@2x.jpg 361w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 746px) 356px, 100vw"
+                    src="mob-filt2.jpg"
                     alt="image"
-                    class=""
-                    width="360"
-                    height="300"
+                    class="filter-list-img"
                   />
-
                   <p class="filter-list-p">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -130,11 +218,18 @@
               <a href="" class="filter-list-link">
                 <div class="filter-list-box">
                   <img
-                    src="./images/img(2).jpg"
+                    srcset="
+                      ./images/mob-filt3.jpg     396w,
+                      ./images/mob-filt3@2x.jpg  397w,
+                      ./images/tab-filt3.jpg     356w,
+                      ./images/tab-filt3@2x.jpg  357w,
+                      ./images/desk-filt3.jpg    360w,
+                      ./images/desk-filt3@2x.jpg 361w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 746px) 356px, 100vw"
+                    src="mob-filt3.jpg"
                     alt="image"
-                    class=""
-                    width="360"
-                    height="300"
+                    class="filter-list-img"
                   />
 
                   <p class="filter-list-p">
@@ -154,11 +249,18 @@
               <a href="" class="filter-list-link">
                 <div class="filter-list-box">
                   <img
-                    src="./images/img(3).jpg"
+                    srcset="
+                      ./images/mob-filt4.jpg     396w,
+                      ./images/mob-filt4@2x.jpg  397w,
+                      ./images/tab-filt4.jpg     356w,
+                      ./images/tab-filt4@2x.jpg  357w,
+                      ./images/desk-filt4.jpg    360w,
+                      ./images/desk-filt4@2x.jpg 361w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 746px) 356px, 100vw"
+                    src="mob-filt4.jpg"
                     alt="image"
-                    class=""
-                    width="360"
-                    height="300"
+                    class="filter-list-img"
                   />
 
                   <p class="filter-list-p">
@@ -177,11 +279,18 @@
               <a href="" class="filter-list-link">
                 <div class="filter-list-box">
                   <img
-                    src="./images/img(4).jpg"
+                    srcset="
+                      ./images/mob-filt5.jpg     396w,
+                      ./images/mob-filt5@2x.jpg  397w,
+                      ./images/tab-filt5.jpg     356w,
+                      ./images/tab-filt5@2x.jpg  357w,
+                      ./images/desk-filt5.jpg    360w,
+                      ./images/desk-filt5@2x.jpg 361w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 746px) 356px, 100vw"
+                    src="mob-filt5.jpg"
                     alt="image"
-                    class=""
-                    width="360"
-                    height="300"
+                    class="filter-list-img"
                   />
 
                   <p class="filter-list-p">
@@ -201,11 +310,18 @@
               <a href="" class="filter-list-link">
                 <div class="filter-list-box">
                   <img
-                    src="./images/img(5).jpg"
+                    srcset="
+                      ./images/mob-filt6.jpg     396w,
+                      ./images/mob-filt6@2x.jpg  397w,
+                      ./images/tab-filt6.jpg     356w,
+                      ./images/tab-filt6@2x.jpg  357w,
+                      ./images/desk-filt6.jpg    360w,
+                      ./images/desk-filt6@2x.jpg 361w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 746px) 356px, 100vw"
+                    src="mob-filt6.jpg"
                     alt="image"
-                    class=""
-                    width="360"
-                    height="300"
+                    class="filter-list-img"
                   />
 
                   <p class="filter-list-p">
@@ -225,13 +341,19 @@
               <a href="" class="filter-list-link">
                 <div class="filter-list-box">
                   <img
-                    src="./images/img(6).jpg"
+                    srcset="
+                      ./images/mob-filt7.jpg     396w,
+                      ./images/mob-filt7@2x.jpg  397w,
+                      ./images/tab-filt7.jpg     356w,
+                      ./images/tab-filt7@2x.jpg  357w,
+                      ./images/desk-filt7.jpg    360w,
+                      ./images/desk-filt7@2x.jpg 361w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 746px) 356px, 100vw"
+                    src="mob-filt7.jpg"
                     alt="image"
-                    class=""
-                    width="360"
-                    height="300"
+                    class="filter-list-img"
                   />
-
                   <p class="filter-list-p">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -249,13 +371,19 @@
               <a href="" class="filter-list-link">
                 <div class="filter-list-box">
                   <img
-                    src="./images/img(7).jpg"
+                    srcset="
+                      ./images/mob-filt8.jpg     396w,
+                      ./images/mob-filt8@2x.jpg  397w,
+                      ./images/tab-filt8.jpg     356w,
+                      ./images/tab-filt8@2x.jpg  357w,
+                      ./images/desk-filt8.jpg    360w,
+                      ./images/desk-filt8@2x.jpg 361w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 746px) 356px, 100vw"
+                    src="mob-filt8.jpg"
                     alt="image"
-                    class=""
-                    width="360"
-                    height="300"
+                    class="filter-list-img"
                   />
-
                   <p class="filter-list-p">
                     14 Stylish and User-Friendly App Design Concepts · Task
                     Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
@@ -274,11 +402,18 @@
               <a href="" class="filter-list-link">
                 <div class="filter-list-box">
                   <img
-                    src="./images/img(9).jpg"
+                    srcset="
+                      ./images/mob-filt9.jpg     396w,
+                      ./images/mob-filt9@2x.jpg  397w,
+                      ./images/tab-filt9.jpg     356w,
+                      ./images/tab-filt9@2x.jpg  357w,
+                      ./images/desk-filt9.jpg    360w,
+                      ./images/desk-filt9@2x.jpg 361w
+                    "
+                    sizes="(min-width: 1158px) 360px, (min-width: 746px) 356px, 100vw"
+                    src="mob-filt9.jpg"
                     alt="image"
-                    class=""
-                    width="360"
-                    height="300"
+                    class="filter-list-img"
                   />
 
                   <p class="filter-list-p">
@@ -352,10 +487,7 @@
                 placeholder="E-mail"
                 name="email"
             /></label>
-            <button
-              class="buttons subscribe-button footer-box-three-text"
-              type="submit"
-            >
+            <button class="buttons subscribe-button" type="submit">
               Subscribe
               <svg class="icon-subscribe" width="24" height="24">
                 <use href="./images/icons.svg#icon-subscribe"></use>
@@ -366,5 +498,6 @@
       </div>
     </footer>
     <script src="./modal.js"></script>
+    <script src="./menu.js"></script>
   </body>
 </html>
